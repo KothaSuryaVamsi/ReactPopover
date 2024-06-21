@@ -1,0 +1,111 @@
+
+button {
+    cursor: pointer;
+}
+
+.btn-popover-actions {
+    position: relative;
+    display: inline-block;
+}
+  
+.btn-popover-actions .popover-menu {
+    position: absolute;
+    z-index: 1002;
+    background: #ffffff;
+    border-radius: 2px;
+    padding: 5px 17px;
+    margin: 0;
+    min-width: 136px;
+    max-width: 225px;
+    border-radius: 12px !important;
+    border: none !important;
+    right: -9px !important;
+    top: 36px;
+}
+
+.btn-popover-actions .popover-menu .menu-item {
+    display: flex;
+    border-top: 1px solid #EBEBEB;
+    padding: 5px 0;
+}
+
+
+.btn-popover-actions .popover-menu .menu-item:first-child {
+    border: none;
+}
+    
+.btn-popover-actions .popover-menu .menu-item .menu-item-link {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 5px 0;
+    width: 100%;
+    text-decoration: none !important;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    text-align: left;
+    color: #0372E3;
+    font-size: 16px;
+    letter-spacing: 0.72px;
+}
+    
+
+.btn-popover-actions .popover-menu .menu-item .menu-item-link:hover {
+    background-color: #F5F5F7;
+}
+    
+
+.btn-popover-actions .popover-menu .menu-item.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+        
+.btn-popover-actions .popover-menu .menu-item.disabled:hover {
+    background-color: #ffffff;
+}
+        
+.btn-popover-actions .popover-menu .menu-item.disabled span {
+    color: #0372E3;
+}
+.btn-popover-actions .popover-menu .menu-item img {
+    width: 20px;
+    height: 19px;
+    position: relative;
+    top: 5px;
+    padding: 1px;
+    font-size: 16px;
+    padding-right: 10px;
+    padding-left: 2px;
+}
+.btn-popover-actions .popover-menu::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 20px;
+    border: 11px solid transparent;
+    border-bottom-color: #fff;
+    z-index: 9999;
+}
+
+  
+.btn-popover-actions .popover-backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    z-index: 1001;
+    margin-top: 0;
+}
+
+.btn-popover-actions.hidden {
+    display: none;
+}
+
+  
